@@ -1,5 +1,5 @@
 ## List of Challenge
 
-# Reversals 
-# FizzBuzz
-# MaxChar
+### Reversals 
+### FizzBuzz
+### MaxChar

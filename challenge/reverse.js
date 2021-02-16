@@ -26,6 +26,21 @@ class Reverse {
         // 5th method
         console.log(`Revese a string: ${str.split('').reduce( (reverseStr,char) => char + reverseStr,'')}`);
     }
+
+    isPallindrome(str) {
+        // 1st method
+        const revStr = str.split('').reverse().join('');
+        const output = revStr === str ? true : false; 
+    
+        console.log(`isPallindrome: ${output}`);
+    }
+
+    reverseIntiger(int) {
+        // 1st method
+        const revInt = parseInt(int.toString().split('').reverse().join('')) * Math.sign(int);
+
+        console.log(`Reverse Intiger: ${revInt}`);
+    }
 }
 
 module.exports = Reverse;
