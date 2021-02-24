@@ -41,6 +41,25 @@ class Reverse {
 
         console.log(`Reverse Intiger: ${revInt}`);
     }
+
+    subString(str) {
+        const result = str.substring(2,5)
+        console.log(`Substring: ${result}`);
+    }
+
+    capitalizeLetter(str) {
+        // 1st method
+        const strArr = str.toLowerCase().split(' ').map((itm)=>{
+            return itm.substring(0,1).toUpperCase() + itm.substring(1).toLowerCase();
+        }).join(' ');
+        
+        // for (let i = 0; i < strArr.length; i++) {
+        //     let element = strArr[i];
+        //     element = element.substring(0,1).toUpperCase() + element.substring(1).toLowerCase();
+        // }
+
+        console.log(`Capitalize Letters: ${strArr}`);
+    }
 }
 
 module.exports = Reverse;
