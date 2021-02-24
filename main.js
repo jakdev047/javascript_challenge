@@ -14,3 +14,6 @@ reverse.subString('Javascript') // [indexStart, stringLength] => vas
 
 // capitalizeLetter
 reverse.capitalizeLetter('i love javascript') // I Love Javascript
+
+// maxCharacter
+console.log(reverse.maxCharacter('Javascript')) // a
