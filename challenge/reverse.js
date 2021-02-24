@@ -52,13 +52,18 @@ class Reverse {
         const strArr = str.toLowerCase().split(' ').map((itm)=>{
             return itm.substring(0,1).toUpperCase() + itm.substring(1).toLowerCase();
         }).join(' ');
-        
+
         // for (let i = 0; i < strArr.length; i++) {
         //     let element = strArr[i];
         //     element = element.substring(0,1).toUpperCase() + element.substring(1).toLowerCase();
         // }
 
-        console.log(`Capitalize Letters: ${strArr}`);
+        // 2nd method
+        const capitalizeString = str.replace(/\b[a-z]/gi,function(char) {
+            return char.toUpperCase();
+        });
+
+        console.log(`Capitalize Letters: ${capitalizeString}`);
     }
 }
 
