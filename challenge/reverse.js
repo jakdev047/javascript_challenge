@@ -80,6 +80,18 @@ class Reverse {
             }
         })
 
+        /* 
+            string to object
+
+            ["j","a","v","a","s","c","r","i","p","t"]
+            if(charMap[j]) {
+                1+=1
+            }
+            else {
+                1
+            }
+        */
+
         // return charMap;  // { J: 1, a: 2, v: 1, s: 1, c: 1, r: 1, i: 1, p: 1, t: 1 }
 
         for (let char in charMap) {
@@ -88,6 +100,19 @@ class Reverse {
                 maxCharacter = char;
             }
         }
+
+        /* 
+            max number & max Character
+            
+            charMap[j] > maxNum(0)
+                maxNum = 1
+                maxCharacter = j
+
+            charMap[a] > maxNum(1)
+                maxNum = 2
+                maxCharacter = a
+
+        */
 
         return maxCharacter;
         // console.log(`Maximum Character: ${charMap}`);
