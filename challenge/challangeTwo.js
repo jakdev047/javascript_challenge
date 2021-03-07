@@ -23,6 +23,35 @@ class ChallengeTwo {
             console.log(`Longest Word: ${longestWordArr}`);
         }
     }
+
+    chunkArray(arr,len){
+        // initial chunked array
+        const chunkedArr = [];
+
+        // 1st process
+        let i = 0;
+        while (i < arr.length) {
+            chunkedArr.push(arr.slice(i, i+len));
+
+            //  increment index
+            i += len;
+        }
+
+        // 2nd process
+        arr.forEach(function(itm){
+            // get last element
+            const lastElement = chunkedArr[chunkedArr.length - 1];
+
+            if(!lastElement || lastElement.length === len) {
+                chunkedArr.push([itm])
+            }
+            else {
+                lastElement.push(itm)
+            }
+        })
+
+        return chunkedArr;
+    }
 }
 
 module.exports = ChallengeTwo;

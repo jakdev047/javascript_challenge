@@ -25,3 +25,6 @@ reverse.fizBuzz(); // 1, 3(fizz), 5(buzz), 7, 9(fizz), 12, 15(fizzBuzz), 18(fizz
 
 // longestWord
 sessionTwo.longestWord('Hello there, my name is Jubayer'); // ['Jubayer']
+
+// chunk array
+console.log(sessionTwo.chunkArray([1,2,3,4,5,6,7],3)); // [[1,2,3],[4,5,6],[7]]
