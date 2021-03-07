@@ -117,6 +117,28 @@ class Reverse {
         return maxCharacter;
         // console.log(`Maximum Character: ${charMap}`);
     }
+
+    fizBuzz() {
+        console.log(`Fizz Buzz Start`);
+
+        for (let i = 1; i <= 30; i++) {
+            let element = i;
+
+            if (element % 15 === 0) {
+                console.log(`FizzBuzz`);
+            }
+            else if (element % 3 === 0) {
+                console.log(`Fizz`);
+            }
+            else if (element % 5 === 0) {
+                console.log(`Buzz`);
+            }
+            else {
+                console.log(`${element}`);
+            }
+        }
+        console.log(`Fizz Buzz End`);
+    }
 }
 
 module.exports = Reverse;

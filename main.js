@@ -17,3 +17,6 @@ reverse.capitalizeLetter('i love javascript') // I Love Javascript
 
 // maxCharacter
 console.log(reverse.maxCharacter('Javascript')) // a
+
+// fizbuzz
+reverse.fizBuzz(); // 1, 3(fizz), 5(buzz), 7, 9(fizz), 12, 15(fizzBuzz), 18(fizz) 
