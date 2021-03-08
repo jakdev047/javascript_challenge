@@ -34,3 +34,6 @@ console.log(sessionTwo.fluttenArr([[1,2,3],[4,5,6],[7]])); // [1,2,3,4,5,6,7]
 
 // isAnagram
 console.log(sessionTwo.isAnagram('elbow','below')); // true
+
+// letterChanges
+console.log(sessionTwo.letterChanges('hello')); // ifmmp

@@ -77,6 +77,23 @@ class ChallengeTwo {
     isAnagram(str1, str2) {
         return formatStr(str1) === formatStr(str2)
     }
+
+    letterChanges(str) {
+        let newStr = str.toLowerCase().replace(/[a-z]/gi, function (char) {
+            if (char === 'z' || char === 'Z') {
+                return 'a';
+            }
+            else {
+                return String.fromCharCode(char.charCodeAt() + 1);
+            }
+        });
+
+        newStr = newStr.replace(/a|e|i|o|u/gi,function(val){
+            return val.toUpperCase();
+        })
+
+        return newStr;
+    }
 }
 
 module.exports = ChallengeTwo;
