@@ -52,6 +52,20 @@ class ChallengeTwo {
 
         return chunkedArr;
     }
+
+    fluttenArr(arrays) {
+        // solution 1
+        let result = arrays.reduce((a,b)=>{
+            return a.concat(b);
+        });
+
+        // solution 2
+        let resultTwo = [].concat.apply([],arrays)
+
+        // solution 3
+        let resultThree = [].concat(...arrays)
+       return resultThree;
+    }
 }
 
 module.exports = ChallengeTwo;

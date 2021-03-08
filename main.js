@@ -28,3 +28,6 @@ sessionTwo.longestWord('Hello there, my name is Jubayer'); // ['Jubayer']
 
 // chunk array
 console.log(sessionTwo.chunkArray([1,2,3,4,5,6,7],3)); // [[1,2,3],[4,5,6],[7]]
+
+// flutten array
+console.log(sessionTwo.fluttenArr([[1,2,3],[4,5,6],[7]])); // [1,2,3,4,5,6,7]
