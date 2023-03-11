@@ -41,4 +41,7 @@ console.log(sessionTwo.isAnagram("elbow", "below")); // true
 console.log(sessionTwo.letterChanges("hello")); // ifmmp
 
 // diffTwoArry
-console.log(iAlgorithm.diffTwoArry([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+console.log(iAlgorithm.diffTwoArry([1, 2, 3, 5], [1, 2, 3, 4, 5])); // [4]
+
+// seekDestroy
+console.log(iAlgorithm.seekDestroy([1, 2, 3, 1, 2, 3], 2, 3)); // [1,1]

@@ -26,6 +26,21 @@ class IntermediateAlgorithm {
 
     return newArr;
   }
+
+  seekDestroy(arr1, ...params) {
+    let newArray = [];
+
+    for (let i = 0; i < arr1.length; i++) {
+      const element = arr1[i];
+
+      // If element is not found in params, add it to newArr
+      if (params.indexOf(element) === -1) {
+        newArray.push(element);
+      }
+    }
+
+    return newArray;
+  }
 }
 
 module.exports = IntermediateAlgorithm;
